@@ -1,5 +1,6 @@
 $(function() {
-  $("#form-submit").on('click', function() {
+  $("#form-submit").on('click', function(e) {
+    e.preventDefault();
     const word = $("#form-text").val();
     if(word.length > 0) {
       const messages = [
@@ -90,9 +91,13 @@ $(function() {
       const messageNum = Math.floor( Math.random() * messages.length);
       const replace_word = word.replace(word,messages[messageNum])
       $("#form-text").val(replace_word)
+      console.log(111)
+      return
       }
+      
     else if(word == "")  {
       alert("聖なるフォームに好きな文字を入力してね！")
+      return
     }
   })
 })
