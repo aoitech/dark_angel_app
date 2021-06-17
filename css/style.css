@@ -37,6 +37,8 @@ a:hover {
   outline: none;
 }
 
+
+
 /* ==============================
 header
 ============================== */
@@ -144,16 +146,18 @@ input[type="text"] {
   width: 100%;
 }
 
-/* .btn {
+.btn {
   padding: 15px 15px;
-} */
+  -webkit-appearance: none;
+  -webkit-text-size-adjust: 100%;
+}
 
 
 /* ==============================
 footer
 ============================== */
 .footer-copyright {
-  font-size: 10px;
+  font-size: 8px;
 }
 
 }
