@@ -1,0 +1,106 @@
+body {
+  /* color: #082b48; */
+  color: #fff;
+  background-color: #082b48;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #082b48;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.container {
+  width: 90%;
+  /* min-width: 980px; */
+  max-width: 980px;
+  margin: auto;
+}
+
+.clear::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+:focus {
+  outline: none;
+}
+
+/* ==============================
+header
+============================== */
+.header-title {
+  font-family: fantasy, Geneva, Tahoma, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  padding: 40px 0 20px 0;
+}
+
+.header-text {
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* ==============================
+form
+============================== */
+input[type="text"] {
+  display: block;
+  width: 600px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  border-radius: 999px;
+  border: 3px solid #fff;
+}
+
+input[type="text"]::placeholder{
+  text-align: left;
+  padding-left: 15px;
+}
+
+.form-parent {
+  padding: 20px 0 40px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn {
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: #082B48;
+  color: #fff;
+  font-family: fantasy, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 4px;
+  border:solid 1px  #fff; 
+}
+
+/* ==============================
+footer
+============================== */
+footer {
+  padding: 60px 0;
+  bottom: 0;
+}
+
+
+.footer-copyright {
+  font-family: fantasy, Geneva, Tahoma, sans-serif;
+  color: #fff;
+  font-weight: bold;
+  text-align: right;
+}
