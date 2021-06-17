@@ -1,3 +1,8 @@
+* {
+  -webkit-appearance: none;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   /* color: #082b48; */
   color: #fff;
@@ -148,8 +153,6 @@ input[type="text"] {
 
 .btn {
   padding: 15px 15px;
-  -webkit-appearance: none;
-  -webkit-text-size-adjust: 100%;
 }
 
 
