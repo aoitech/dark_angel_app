@@ -31,7 +31,11 @@ $(function() {
         const morning_messages = [
         "漆黒の闇が眠りにつくとき、聖なる灯が目を覚ます。",
         "漆黒の闇から覚醒したまばゆい光……さて、そろそろ我が身の力を解き放つとするか",
-        "久しく深い宵から目覚めたな・・・"
+        "久しく深い宵から目覚めたな・・・",
+        "神が人類に与えし希望の光が君や僕に降り注ぐことを神に、全ての自然に感謝",
+        "ふん…貴様もあの暗黒の夜を生き延びることができたのか……祝福してやろう",
+        "暗黒は終わり再び世界は輝こうとしている",
+        "神聖なる浄化の光がやってきたようだ…"
       ]
       
         const morning_messageNum = Math.floor( Math.random() * morning_messages.length);
@@ -41,8 +45,14 @@ $(function() {
       } 
       
       else if (word.indexOf("こんにちは") !== -1) {
-        const noon_word = word.replace(word,"生きるべくした物の怪の面を拝むことになろうとは嬉しく思うぞ。"
-          )
+        const noon_messages = [
+          "生きるべくした物の怪の面を拝むことになろうとは嬉しく思うぞ。",
+          "眩い光が我を包む…",
+          "こんにちははネタが少ないんだよねー(🙏 ˙꒳˙†)"
+        ]
+
+        const noon_messageNum = Math.floor( Math.random() * noon_messages.length);
+        const noon_word = word.replace(word,noon_messages[noon_messageNum])
         $("#form-text").val(noon_word)
         return
       }
@@ -51,7 +61,8 @@ $(function() {
         const night_messages = [
           "暗黒に包まれし静寂を楽しむとしよう。",
           "それでは魔界の迷宮へと足を進めることにしよう。",
-          "漆黒の闇が我を呼んでいるようだ･･･。"
+          "漆黒の闇が我を呼んでいるようだ･･･。",
+          "このダークサイドは命の輝きのように無垢で儚い故に美しい"
         ]
         
         const night_messageNum = Math.floor( Math.random() * night_messages.length);
