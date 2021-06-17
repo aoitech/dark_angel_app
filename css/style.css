@@ -1,0 +1,49 @@
+body {
+  color: #082b48;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #082b48;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.container {
+  width: 90%;
+  /* min-width: 980px; */
+  max-width: 980px;
+  margin: auto;
+}
+
+.clear::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* ==============================
+header
+============================== */
+.header-title {
+  font-family: fantasy, Geneva, Tahoma, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  padding: 40px 0 20px 0;
+}
+
+.header-text {
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 20px;
+}
