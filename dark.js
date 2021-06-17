@@ -91,7 +91,6 @@ $(function() {
       const messageNum = Math.floor( Math.random() * messages.length);
       const replace_word = word.replace(word,messages[messageNum])
       $("#form-text").val(replace_word)
-      console.log(111)
       return
       }
       
