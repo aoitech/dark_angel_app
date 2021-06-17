@@ -140,6 +140,10 @@ section共通クラス
 /* ==============================
 header
 ============================== */
+.header-title {
+  font-size: 18px;
+}
+
 .header-text {
   font-size: 14px;
 }
