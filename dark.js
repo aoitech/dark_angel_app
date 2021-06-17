@@ -38,6 +38,7 @@ $(function() {
         "神聖なる浄化の光がやってきたようだ…"
       ]
       
+      // 整数切り上げ&ランダムな数値*配列の数を数えてその数値を指定して表示させる
         const morning_messageNum = Math.floor( Math.random() * morning_messages.length);
         const morning_word = word.replace(word,morning_messages[morning_messageNum])
         $("#form-text").val(morning_word)
