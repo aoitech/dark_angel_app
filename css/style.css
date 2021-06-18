@@ -1,10 +1,10 @@
+/* iPhone view崩れ防止 */
 * {
   -webkit-appearance: none;
   -webkit-text-size-adjust: 100%;
 }
 
 body {
-  /* color: #082b48; */
   color: #fff;
   background-color: #082b48;
   font-family: Verdana, Geneva, Tahoma, sans-serif;

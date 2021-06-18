@@ -26,7 +26,7 @@ $(function() {
         "我は大いなる力を手にしたことで人間界から迫害を受け、この小宇宙に逃げ延びた民なのだ",
         "わけがわからないよね〜💪( ˙꒳˙💪†)"
       ]
-
+      
       // indexOf=文字列が見つかればそのインデックスを、含まれなければ「-1」を返す。
       // JSでは-1はtrueとなるので、必ず「-1ではない」事をもって結果を確認する。
       if(word.indexOf("おはよう") !== -1) {
@@ -96,7 +96,6 @@ $(function() {
           "クルヘンウルスの裏だッ！！！ ……っ、すまん、ついな……我と共に歩みて…翼をください"
         ]
         
-
         const love_messageNum = Math.floor( Math.random() * love_messages.length);
         const love_word = word.replace(word,love_messages[love_messageNum])
         $("#form-text").val(love_word)
