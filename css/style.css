@@ -149,11 +149,6 @@ responsive
     content: none;
   }
   
-/* iOSの仕様で16px以下になると画面がzoomされるため、その防止策*/
-  input {
-    font-size: 16px;
-  }
-
 /* ==============================
 section共通クラス
 ============================== */
@@ -188,7 +183,10 @@ form
   display: none;
 }
 
+/* ↓iOSの仕様で16px以下になると画面がzoomされるため、
+その防止策にfont-size指定*/
 .form-input {
+  font-size: 16px;
   width: 100%;
 }
 
