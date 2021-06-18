@@ -88,13 +88,14 @@ $(function() {
         return
       }
 
-      else if (word .indexOf("好き") || ("愛") || ("すき")|| ("大好き")  !== -1) {
+      else if (word.indexOf("好き") !== -1 || word.indexOf("愛")  !== -1 || word.indexOf("すき") !== -1 || word.indexOf("大好き") !== -1) {
         const love_messages = [
           "我と契りを結ぶことによってフォルトゥ―ナは召喚される。幸運を掴みたいのであれば、今しかないぞ",
           "紺碧の大空に芽吹きし哀しみのレクイエムは君の感じた旋律を悠久に示唆するだろう",
           "永遠が終わるその時まで過ぎ去りし過去ゆえ…俺は……アンタの笑顔に救われて…いたんだ…",
           "クルヘンウルスの裏だッ！！！ ……っ、すまん、ついな……我と共に歩みて…翼をください"
         ]
+        
 
         const love_messageNum = Math.floor( Math.random() * love_messages.length);
         const love_word = word.replace(word,love_messages[love_messageNum])
@@ -102,6 +103,7 @@ $(function() {
         return
       }
 
+      
       // Math.random=0以上1未満の疑似ランダムな浮動小数点による小数を返すメソッド
       const messageNum = Math.floor( Math.random() * messages.length);
       const replace_word = word.replace(word,messages[messageNum])
