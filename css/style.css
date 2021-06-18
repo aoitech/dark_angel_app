@@ -148,6 +148,11 @@ responsive
   .clear::after {
     content: none;
   }
+  
+/* iOSの仕様で16px以下になると画面がzoomされるため、その防止策*/
+  input {
+    font-size: 16px;
+  }
 
 /* ==============================
 section共通クラス
@@ -179,29 +184,9 @@ header
 /* ==============================
 form
 ============================== */
-.form-img {
-  display: block;
-}
-
 .chuuni {
-  width: 150px;
+  display: none;
 }
-
-/* padding: initial;はスタイルの解除 */
-.chuuni-girl {
-  display: block;
-  padding: initial;
-  margin: 0 auto;
-  padding-bottom: 20px;
-}
-
-.chuuni-boy {
-  display: block;
-  padding: initial;
-  margin: 0 auto;
-  padding-top: 20px;
-}
-
 
 .form-input {
   width: 100%;
