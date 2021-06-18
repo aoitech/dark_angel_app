@@ -22,7 +22,8 @@ $(function() {
         "平面世界ほど俺の脳を刺激するものはない",
         "湧水で穢れを浄化しておくか",
         "貴様の奏でるシンフォニーは不協和音だ",
-        "我と契りを結ぶことによってフォルトゥ―ナは召喚される。幸運を掴みたいのであれば、今しかないぞ",
+        "闇の壁を制覇して深淵たる永遠とも思われる小宇宙の世界に来たのだ",
+        "我は大いなる力を手にしたことで人間界から迫害を受け、この小宇宙に逃げ延びた民なのだ",
         "わけがわからないよね〜💪( ˙꒳˙💪†)"
       ]
 
@@ -84,6 +85,20 @@ $(function() {
         const goodnight_messageNum = Math.floor( Math.random() * goodnight_messages.length);
         const goodnight_word = word.replace(word,goodnight_messages[goodnight_messageNum])
         $("#form-text").val(goodnight_word)
+        return
+      }
+
+      else if (word .indexOf("好き") || ("愛") || ("すき")|| ("大好き")  !== -1) {
+        const love_messages = [
+          "我と契りを結ぶことによってフォルトゥ―ナは召喚される。幸運を掴みたいのであれば、今しかないぞ",
+          "紺碧の大空に芽吹きし哀しみのレクイエムは君の感じた旋律を悠久に示唆するだろう",
+          "永遠が終わるその時まで過ぎ去りし過去ゆえ…俺は……アンタの笑顔に救われて…いたんだ…",
+          "クルヘンウルスの裏だッ！！！ ……っ、すまん、ついな……我と共に歩みて…翼をください"
+        ]
+
+        const love_messageNum = Math.floor( Math.random() * love_messages.length);
+        const love_word = word.replace(word,love_messages[love_messageNum])
+        $("#form-text").val(love_word)
         return
       }
 
