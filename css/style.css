@@ -125,6 +125,11 @@ form
   border:solid 1px  #fff; 
 }
 
+.btn:hover {
+  opacity: 0.7;
+  background-color: #082C99;
+}
+
 /* ==============================
 footer
 ============================== */
